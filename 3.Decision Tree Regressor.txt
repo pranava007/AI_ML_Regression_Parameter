@@ -1,0 +1,14 @@
+DecisionTreeRegressor()
+DecisionTreeRegressor(max_depth=5)
+DecisionTreeRegressor(min_samples_split=10)
+DecisionTreeRegressor(min_samples_leaf=5)
+DecisionTreeRegressor(min_impurity_decrease=0.01)
+DecisionTreeRegressor(splitter='random', random_state=42)
+DecisionTreeRegressor(max_features='sqrt')
+DecisionTreeRegressor(max_leaf_nodes=20)
+DecisionTreeRegressor(ccp_alpha=0.01)
+DecisionTreeRegressor(max_depth=10,min_samples_split=5,min_samples_leaf=3,max_leaf_nodes=50,random_state=42)
+DecisionTreeRegressor(max_features='log2', max_depth=7, random_state=42)
+DecisionTreeRegressor(splitter='random', min_impurity_decrease=0.02, random_state=0)
+
+
