@@ -1,0 +1,42 @@
+RandomForestRegressor()
+# Standard settings with 100 trees and other default values.
+RandomForestRegressor(n_estimators=200, random_state=42)
+# Use more trees for better accuracy, at the cost of increased computation time.
+RandomForestRegressor(max_depth=10, random_state=42)
+# Prevent overfitting by limiting the depth of individual trees.
+RandomForestRegressor(min_samples_split=10, random_state=42)
+# Requires at least 10 samples to split an internal node.
+RandomForestRegressor(min_samples_leaf=5, random_state=42)
+# Ensures each leaf has at least 5 samples, improving generalization.
+RandomForestRegressor(max_features='sqrt', random_state=42)
+# Considers the square root of total features for each split (good for high-dimensional data).
+RandomForestRegressor(bootstrap=True, random_state=42)
+# Uses bootstrapping for tree construction, which helps with randomness.
+RandomForestRegressor(oob_score=True, random_state=42)
+# Use out-of-bag samples to estimate the generalization accuracy.
+RandomForestRegressor(n_jobs=-1, random_state=42)
+# Use all available CPU cores for faster training.
+RandomForestRegressor(warm_start=True, random_state=42)
+# Reuse the previous forest and add more estimators incrementally.
+RandomForestRegressor(ccp_alpha=0.01, random_state=42)
+# Applies cost-complexity pruning to reduce tree size and improve generalization.
+RandomForestRegressor(max_samples=0.8, random_state=42)
+# Limit the number of samples drawn for each estimator to 80% of the dataset.
+RandomForestRegressor(max_depth=None, min_samples_split=2, min_samples_leaf=1, n_estimators=500, random_state=42)
+# Deep trees with more estimators for better model accuracy.
+RandomForestRegressor(
+    n_estimators=50, 
+    max_depth=5, 
+    min_samples_split=5, 
+    min_samples_leaf=3, 
+    random_state=42
+)
+# Lower complexity for less overfitting and faster computation on small datasets.
+RandomForestRegressor(
+    n_estimators=100, 
+    max_depth=10, 
+    n_jobs=-1, 
+    max_samples=0.9, 
+    random_state=42
+)
+# Use up to 90% of the dataset for each tree to reduce memory usage.
