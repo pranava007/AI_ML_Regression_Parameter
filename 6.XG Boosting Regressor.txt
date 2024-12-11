@@ -12,3 +12,6 @@ regressor = xg.XGBRegressor(n_estimators=1000, learning_rate=0.01, random_state=
 
 # XGBoost library
 import xgboost as xg
+
+!pip install xgboost
+
