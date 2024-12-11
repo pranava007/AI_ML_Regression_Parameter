@@ -1,0 +1,19 @@
+regressor = LGBMRegressor()
+regressor = LGBMRegressor(n_estimators=200)
+regressor = LGBMRegressor(learning_rate=0.05)
+regressor = LGBMRegressor(max_depth=7)
+regressor = LGBMRegressor(reg_alpha=0.1)
+regressor = LGBMRegressor(reg_lambda=0.5)
+regressor = LGBMRegressor(subsample=0.8)
+regressor = LGBMRegressor(colsample_bytree=0.8)
+regressor = LGBMRegressor(min_child_samples=20)
+regressor = LGBMRegressor(device='gpu')
+regressor = LGBMRegressor(num_leaves=31, max_depth=5)
+regressor = LGBMRegressor(n_estimators=1000, learning_rate=0.01)
+regressor = LGBMRegressor(random_state=42)
+regressor = LGBMRegressor(n_estimators=300, colsample_bytree=0.6, subsample=0.9)
+regressor = LGBMRegressor(num_leaves=50, learning_rate=0.03)
+
+from lightgbm import LGBMRegressor
+
+!pip install lightgbm
